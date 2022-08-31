@@ -12,3 +12,9 @@ Passo a passo para criação de testes automatizados.
     2.3 - Criar um método incial que saiba instanciar umma PO de login;
     2.4 - Criar os testes baseado na planilha;
         2.4.1 - Não deve logar no sistema com email e senha vazios;
+        2.4.2 - Não deve logar no sistema com email incorreto e senha vazia;
+        2.4.3 - Não deve logar no sistema com email vazio e senha incorreta;
+        2.4.4 - Não deve logar no sistema com email incorreto e senha incorreta;
+        2.4.5 - Não deve logar no sistema com email correto e senha incorreta;
+        2.4.6 - Não deve logar no sistema com email incorreto e senha correta;
+        2.4.7 - Deve logar no sistema com email correto e senha correta;
