@@ -6,11 +6,14 @@ import org.openqa.selenium.support.FindBy;
 
 public class ControleDeProdutoPO extends BasePO{
 
-    @FindBy(id = "#btn-adicionar")
-    private WebElement buttonAdicionar;
+    @FindBy(id = "btn-adicionar")
+    public WebElement buttonAdicionar;
 
     @FindBy(css = "ul>li>a.nav-link")
-    private WebElement LinkVoltar;
+    public WebElement LinkVoltar;
+
+    @FindBy(css = "div.modal-header>h4.modal-title")
+    public WebElement tituloModal;
     
     public ControleDeProdutoPO(WebDriver driver) {
         super(driver);
