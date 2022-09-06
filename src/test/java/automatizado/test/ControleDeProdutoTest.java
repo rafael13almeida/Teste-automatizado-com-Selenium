@@ -34,5 +34,19 @@ public class ControleDeProdutoTest extends BaseTest {
 
         String titulo = controleProdutoPage.tituloModal.getText();
         assertEquals("Produto", titulo);
+
+        controleProdutoPage.buttonSair.click();
+        controleProdutoPage.buttonSair.click();
+    }
+
+    @Test
+    public void TC002_NaoDeveSerPossivelCadastrarUmProdutoSemPreencherTodosOsCampos() {
+        controleProdutoPage.buttonAdicionar.click();
+
+        controleProdutoPage.cadastrarProduto("0001", "Entendendo Algoritmos", 1, 25.90, "");;
+
+        String mensagem = controleProdutoPage.spanMensagem.getText();
+
+        assertEquals("Todos os campos são obrigatórios para o cadastro!", mensagem);
     }
 }
